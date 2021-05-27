@@ -51,19 +51,21 @@
                     </p>
                 </div>
                 <div class="dropdown">
-                    <select class="fad-dropdown">
-                        <option>Select a Level</option>
-                        <option>Associate Degree</option>
-                        <option>Bachelor's Degree</option>
-                        <option>Master's Degree</option>
-                        <option>Doctoral Degree</option>
-                        <option>Certificate & Diploma</option>
+                    <select id="fad-dropdown" onchange="changeLevel()">
+                        <option value="" selected disabled hidden>Select a Level</option>
+                        <option value="associates" >Associate Degree</option>
+                        <option value="bachelors" >Bachelor's Degree</option>
+                        <option value="masters">Master's Degree</option>
+                        <option value="doctorate">Doctoral Degree</option>
+                        <option value="cert">Certificate & Diploma</option>
                     </select>
+                    <div class="select-arrow"></div>
                 </div>
-                    <button class="search-button">
-                        SEARCH
-                    </button>
-
+                    <a href="/school-list?level=all" id="search-link">
+                        <button class="search-button">
+                            SEARCH
+                        </button>
+                    </a>
             </div>
             <hr>
         </div>
@@ -71,28 +73,55 @@
             
     <div class="bottom-section">
         <div class="main-container">
-            <h1 id="bio-skills">TOP SKILLS BIOLOGY GRADUATES HAVE</h1>
+            <h3 id="bio-skills">TOP SKILLS BIOLOGY GRADUATES HAVE</h3>
             
             <div class="card-section">
-                <div class="card" id="research">
-                    <img src="assets/images/Icon_Research.png">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis magnam eum hic suscipit, esse possimus consequuntur assumenda quidem quasi et delectus excepturi ullam tenetur laborum modi dicta labore obcaecati similique.
+                <div class="top-card-section">
+                    <div class="card" id="research">
+                        <img src="assets/images/Icon_Research.png">
+                        <p class="skill">
+                            Research
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis magnam eum hic suscipit, esse possimus consequuntur assumenda quidem quasi et delectus excepturi ullam tenetur laborum modi dicta labore obcaecati similique.
+                        </p>
+                    </div>
+                    <div class="card" id="data-analysis">
+                        <img src="assets/images/Icon_DataAnalysis.png">
+                        <p class="skill">
+                            Data Analysis
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis magnam eum hic suscipit, esse possimus consequuntur assumenda quidem quasi et delectus excepturi ullam tenetur laborum modi dicta labore obcaecati similique.
+                        </p>
+                    </div>
                 </div>
-                <div class="card" id="data-analysis">
-                    <img src="assets/images/Icon_DataAnalysis.png">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis magnam eum hic suscipit, esse possimus consequuntur assumenda quidem quasi et delectus excepturi ullam tenetur laborum modi dicta labore obcaecati similique.
-                </div>
-                <div class="card" id="communication">
-                    <img src="assets/images/Icon_Communication.png">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis magnam eum hic suscipit, esse possimus consequuntur assumenda quidem quasi et delectus excepturi ullam tenetur laborum modi dicta labore obcaecati similique.
-                </div>
-                <div class="card" id="project-management">
-                    <img src="assets/images/Icon_ProjectManagement.png">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis magnam eum hic suscipit, esse possimus consequuntur assumenda quidem quasi et delectus excepturi ullam tenetur laborum modi dicta labore obcaecati similique.
+
+                <div class="bottom-card-section">
+                    <div class="card" id="communication">
+                        <img src="assets/images/Icon_Communication.png">
+                        <p class="skill">
+                            Communication
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis magnam eum hic suscipit, esse possimus consequuntur assumenda quidem quasi et delectus excepturi ullam tenetur laborum modi dicta labore obcaecati similique.
+                        </p>
+                    </div>
+                    <div class="card" id="project-management">
+                        <img src="assets/images/Icon_ProjectManagement.png">
+                        <p class="skill">
+                            Project Management
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis magnam eum hic suscipit, esse possimus consequuntur assumenda quidem quasi et delectus excepturi ullam tenetur laborum modi dicta labore obcaecati similique.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     
+    <script src="script.js"> </script>
+
 </body>
 </html>

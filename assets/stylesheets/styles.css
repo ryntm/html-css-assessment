@@ -29,7 +29,10 @@ body {
 .learn-more {
     display: flex;
     justify-content: center;
-    margin: 5px 0;
+    margin: 10px 0;
+}
+
+.learn-more, .links-container a, #fad-dropdown, .search-button {
     font-size: 18px;
 }
 
@@ -42,16 +45,23 @@ body {
 .links-container a {
     color: #0A162B;
     font-weight: bold;
+    
+}
+
+.links-container a:hover {
+    background-color: #FFC327;
+
 }
 
 hr {
     height: 2px;
     background-color: #0A162B;
     border: none;
+    margin: 10px 0;
 }
 
 .fad {
-    margin: 50px 100px;
+    margin: 45px 100px;
     display: flex;
 }
 
@@ -69,18 +79,49 @@ hr {
     font-size: 12px;
 }
 
-.fad-dropdown {
+.dropdown {
+    position: relative;
+
+}
+
+#fad-dropdown {
     border: 2px #D0D0D0 solid;
     border-radius: 5px;
     height: 55px;
     width: 380px;
     font-family: 'Cabin', sans-serif;
-    font-size: 18px;
     margin: 0 20px;
 }
 
+#fad-dropdown:hover {
+    background-color: whitesmoke;
+}
+
+#fad-dropdown:focus + .select-arrow {
+    transform: rotate(180deg);
+}
+
+/* .fad-dropdown: + .select-arrow {
+    transform: rotate(180deg);
+} */
+
+.select-arrow {
+    position: absolute;
+    right: 10%;
+    top: 23px;
+    /* height: 20px; */
+    /* width: 20px; */
+    border-top: 6px solid black;
+    border-left: 6px solid white;
+    border-right: 6px solid white;
+    transition: transform 100ms linear;
+    /* transform: rotate(0); */
+
+} 
+
 select {
     padding: 0 15px;
+    appearance: none;
 }
 
 .search-button {
@@ -92,6 +133,53 @@ select {
     border: none;
     font-family: 'Cabin', sans-serif;
     font-weight: bold;
-    font-size: 18px;
     background-blend-mode: overlay, normal;
+}
+
+.search-button:hover {
+    background: #FFC327;
+    background-blend-mode: overlay;
+}
+
+
+.bottom-section {
+    background:#F3FBFF;
+    padding: 21px 0;
+}
+
+#bio-skills {
+    text-align: center;
+    margin: 0 0 5px 0 ;
+    font-size: 24px;
+}
+
+.card-section {
+    margin: 20px;
+}
+
+.top-card-section {
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-card-section {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    /* height: 234px; */
+    width: 400px;
+    text-align: center;
+    background-color: white;
+    margin: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+    padding: 25px;
+}
+
+.skill {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 5px 0 0 0;
 }
