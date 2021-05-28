@@ -185,6 +185,26 @@ option:focus + .select-arrow{
     margin: 5px 0 0 0;
 }
 
+#research-icon {
+    height: 53px;
+    width: 46px;
+}
+
+#communication-icon {
+    height: 47px;
+    width: 54px;
+}
+
+#project-management-icon {
+    height: 41px;
+    width: 49px;
+}
+
+#data-analysis-icon {
+    height: 51px;
+    width: 51px;
+}
+
 @media only screen 
     and (max-width:1114px) {
 
